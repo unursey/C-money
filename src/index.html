@@ -58,16 +58,27 @@
         </nav>
 
         <button class="header__button-nav" aria-label="menu">
-          <svg class="header__button-icon" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/header/menu.svg#menu"></use>
+          <svg class="header__button-icon" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_67_539)">
+              <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="white"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_67_539">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
           </svg>
-
-          <svg
-            class="header__button-close header__button-close_hide"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use class="header__button-close-img" href="./img/header/menu.svg#close"></use>
-          </svg>
+            
+          <svg class="header__button-close header__button-close_hide" width="24" height="24" viewBox="0 0 24 24" fill="#210B36" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_75_223)">
+            <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#210B36"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_75_223">
+            <rect width="24" height="24" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>         
         </button>
       </div>
     </header>
@@ -327,7 +338,7 @@
                         <img
                           class="card__image"
                           src="img/reviews/julia.jpg"
-                          alt="VR очки">
+                          alt="Юлия">
                       </div>
                       <h3 class="card__title">Юлия С</h3>
                       <p class="card__text">
@@ -343,7 +354,7 @@
                         <img
                           class="card__image"
                           src="img/reviews/sveta.jpg"
-                          alt="VR очки">
+                          alt="Света">
                       </div>
                       <h3 class="card__title">Светлана Н</h3>
                       <p class="card__text">
@@ -359,7 +370,7 @@
                         <img
                           class="card__image"
                           src="img/reviews/serega.jpg"
-                          alt="VR очки">
+                          alt="Сергей">
                       </div>
                       <h3 class="card__title">Сергей А</h3>
                       <p class="card__text">
@@ -446,13 +457,10 @@
                       target="_blank"
                       aria-label="Telegram"
                     >
-                      <svg
-                        class="footer__image"
-                        xmlns="http://www.w3.org/2000/svg"
-                        role="img"
-                      >
-                        <use href="./img/footer/nav.svg#telegram"></use>
-                      </svg>
+                      <svg class="footer__image" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="23" cy="23" r="23" fill="white"/>
+                        <path d="M31.6651 14.7169L13.9351 21.5539C12.7251 22.0399 12.7321 22.7149 13.7131 23.0159L18.2651 24.4359L28.7971 17.7909C29.2951 17.4879 29.7501 17.6509 29.3761 17.9829L20.8431 25.6839H20.8411L20.8431 25.6849L20.5291 30.3769C20.9891 30.3769 21.1921 30.1659 21.4501 29.9169L23.6611 27.7669L28.2601 31.1639C29.1081 31.6309 29.7171 31.3909 29.9281 30.3789L32.9471 16.1509C33.2561 14.9119 32.4741 14.3509 31.6651 14.7169V14.7169Z" fill="#6E479E"/>
+                      </svg>                      
                     </a>
                   </li>
 
@@ -463,13 +471,10 @@
                       target="_blank"
                       aria-label="Twitter"
                     >
-                      <svg
-                        class="footer__image"
-                        xmlns="http://www.w3.org/2000/svg"
-                        role="img"
-                      >
-                        <use href="./img/footer/nav.svg#twitter"></use>
-                      </svg>
+                      <svg class="footer__image" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="23" cy="23" r="23" fill="white"/>
+                        <path d="M34.643 15.937C33.808 16.307 32.911 16.557 31.968 16.67C32.941 16.0877 33.669 15.1714 34.016 14.092C33.1019 14.6349 32.1014 15.0172 31.058 15.222C30.3564 14.4728 29.4271 13.9763 28.4143 13.8094C27.4016 13.6426 26.3621 13.8147 25.4572 14.2992C24.5524 14.7837 23.8328 15.5533 23.4102 16.4887C22.9875 17.424 22.8855 18.4727 23.12 19.472C21.2677 19.379 19.4556 18.8975 17.8014 18.0589C16.1472 17.2202 14.6879 16.0431 13.518 14.604C13.118 15.294 12.888 16.094 12.888 16.946C12.8876 17.713 13.0764 18.4682 13.4379 19.1447C13.7993 19.8212 14.3222 20.398 14.96 20.824C14.2203 20.8004 13.4969 20.6005 12.85 20.241V20.301C12.8499 21.3767 13.222 22.4193 13.9032 23.252C14.5843 24.0846 15.5326 24.6559 16.587 24.869C15.9008 25.0547 15.1813 25.082 14.483 24.949C14.7805 25.8746 15.36 26.684 16.1404 27.2639C16.9208 27.8438 17.8629 28.1651 18.835 28.183C17.1848 29.4784 15.1469 30.181 13.049 30.178C12.6774 30.1781 12.3061 30.1564 11.937 30.113C14.0665 31.4821 16.5454 32.2088 19.077 32.206C27.647 32.206 32.332 25.108 32.332 18.952C32.332 18.752 32.327 18.55 32.318 18.35C33.2293 17.6909 34.0159 16.8749 34.641 15.94L34.643 15.937Z" fill="#6E479E"/>
+                      </svg>                                           
                     </a>
                   </li>
                 </ul>
@@ -478,7 +483,8 @@
           </div>
 
           <div class="footer__map">
-            <iframe class="footer__map-img" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aabcb6a644995a3565ee75d7ac67bb14285889ac507d343439c2834c0cbee9226&amp;source=constructor" width="480" height="260"></iframe>
+            <a class="footer__map-img" href="https://yandex.ru/maps/?um=constructor%3Aabcb6a644995a3565ee75d7ac67bb14285889ac507d343439c2834c0cbee9226&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aabcb6a644995a3565ee75d7ac67bb14285889ac507d343439c2834c0cbee9226&amp;width=480&amp;height=260&amp;lang=ru_RU" alt="Карта где нас найти"/></a>
+            <!-- <iframe class="footer__map-img" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aabcb6a644995a3565ee75d7ac67bb14285889ac507d343439c2834c0cbee9226&amp;source=constructor" width="480" height="260"></iframe> -->
           </div>
         </div>
 

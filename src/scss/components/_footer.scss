@@ -149,7 +149,7 @@
     width: 425px;
     height: 200px;
     margin-top: 10px;
-    overflow-x: hidden;
+    overflow: hidden;
     @include desktop {
       width: 355px;
       height: 200px;
