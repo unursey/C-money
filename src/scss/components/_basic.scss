@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: Nunito, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  background-color: $white-color;
+  color: $darkpurple-color;
+  
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  font-family: Nunito, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p, figure, fieldset {
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 130px;
+  margin: 0 auto;
+  @include desktop {
+    max-width: 1024px;
+    padding: 0 22px;
+  } 
+  @include laptop {
+    max-width: 768px;
+    padding: 0 94px;
+  }
+  @include tablet {
+    max-width: 320px;
+    padding: 0 15px;
+  }
+}
+
+section {
+  padding: 70px 0; 
+  @include laptop {
+    padding: 60px 0;
+  }
+  @include tablet {
+    padding: 40px 0;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+svg path {
+  fill:inherit;
+  stroke:inherit;
+  stroke-width:inherit;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

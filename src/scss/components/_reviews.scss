@@ -1,0 +1,80 @@
+.reviews {
+  padding-top: 90px;
+  padding-bottom: 72px;
+  @include desktop {
+    padding-bottom: 46px;
+  }
+  @include laptop {
+    padding-top: 82px;
+  }
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 35px;
+  }
+  &__container {
+    position: relative;
+  }
+  &__title {
+    font-family: Comfortaa, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 40px;
+    @include laptop {
+      max-width: 400px;
+    }
+    @include tablet {
+      max-width: 200px;
+      font-size: 20px;
+      line-height: 22.3px;
+      margin-bottom: 20px;
+    }
+  }
+  &__block {
+    position: relative;
+    padding: 0 108px;
+    margin-bottom: 48px;
+    @include desktop {
+      margin-bottom: 50px;
+      padding: 0 82px;
+    }
+    @include laptop {
+      padding: 0 30px;
+      margin-bottom: 35px
+    }
+  }
+  &__button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    background-image: url("../img/reviews/arrow.svg");
+    background-size: cover;
+    top: calc(50% - 45px);
+    z-index: 2;
+    border-radius: 50%;
+    transition: background-color .8s ease;
+    @include tablet {
+      width: 36px;
+      height: 36px;
+      top: calc(50% - 38px);
+    }
+    &:hover, &:active {
+      background-color: $verylightpurple-color;
+    }
+  }
+  &__button-next {
+    left: 50px;
+    @include desktop {
+      left: 0px;
+    }
+  }
+  &__button-prev {
+    transform: rotate(180deg);
+    right: 50px;
+    @include desktop {
+      right: 0px;
+    }
+  }
+}

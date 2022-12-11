@@ -1,0 +1,16 @@
+
+@import 'components/normalize';
+@include normalize();
+@import "libs/swiper-bundle.min.css";
+@import 'components/var';
+@import "components/fonts";
+@import "components/basic";
+@import "components/header";
+@import "components/present";
+@import "components/footer";
+@import "components/burger";
+@import "components/main";
+@import "components/profit";
+@import "components/regist";
+@import "components/reviews";
+@import "components/card";

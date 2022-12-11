@@ -1,0 +1,184 @@
+.footer {
+  padding-top: 69px;
+  padding-bottom: 60px;
+  color: $white-color;
+  background: linear-gradient(
+    87.4deg,
+    #2e00b1 -11.74%,
+    #8100bd 48.81%,
+    #a400be 113.27%
+  );
+  @include desktop {
+    padding-top: 70px;
+  }
+  @include laptop {
+    padding-top: 60px;
+    padding-bottom: 28px;
+  }
+  @include tablet {
+    padding-top: 40px;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+    @include desktop {
+      margin-bottom: 4px;
+    }
+    @include laptop {
+      flex-direction: column;
+      gap: 28px;
+    }
+    @include tablet {
+      gap: 32px;
+    }
+  }
+  &__block-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 8px;
+    @include desktop {
+      flex-basis: 420px;
+    }
+    @include laptop {
+      flex-basis: auto;
+      padding-top: 0;
+      margin-bottom: 8px;
+    }
+    @include tablet {
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 0;
+    }
+  }
+  &__logo-block {
+    flex-basis: 190px;
+    flex-shrink: 0;
+    @include desktop {
+      flex-basis: 164px;
+    }
+    @include laptop {
+      flex-basis: auto;
+    }
+  }
+  &__logo-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    white-space: nowrap;
+  }
+  &__logo {
+    width: 38px;
+    height: 38px;
+  }
+  &__nav {
+    flex-basis: 220px;
+    @include tablet {
+      flex-basis: auto;
+    }
+  }
+  &__item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 12px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 18.2px;
+      margin-bottom: 7px;
+    }
+  }
+  &__contacts {
+    flex-basis: 272px;
+    @include desktop {
+      flex-basis: 181px;
+    }
+    @include laptop {
+      flex-basis: 340px;
+    }
+    @include tablet {
+      flex-basis: auto;
+    }
+  }
+  &__contacts-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 16px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 8px;
+    }
+  }
+  &__address {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    font-style: normal;
+    gap: 15px;
+    margin-bottom: 20px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 18px;
+      gap: 8px;
+    }
+  }
+  &__social-list {
+    display: flex;
+    gap: 18px;
+  }
+  &__image {
+    width: 46px;
+    height: 46px;
+    fill: $purple-color;
+    transition: fill .8s ease;
+    &:hover, &:active {
+      fill: $brightpurple-color;
+    }
+  }
+  &__map {
+    width: 425px;
+    height: 200px;
+    margin-top: 10px;
+    overflow-x: hidden;
+    @include desktop {
+      width: 355px;
+      height: 200px;
+    }
+    @include laptop {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 260px;
+      margin-top: 0;
+      margin-bottom: 48px;     
+    }
+    @include tablet {
+      margin-top: -5px;
+      height: 180px;
+      margin-bottom: 37px;
+    }
+  }
+  &__map-img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+  }
+  &__copy-text {
+    @include tablet {
+      font-size: 14px;
+      line-height: 18.2px;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.profit {
+  padding-top: 45px;
+  &__title {
+    font-family: Comfortaa, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 52px;
+    @include desktop {
+      margin-bottom: 54px;
+    }
+    @include laptop {
+      max-width: 400px;
+      margin-bottom: 44px;
+    }
+    @include tablet {
+      max-width: 200px;
+      font-size: 19px;
+      line-height: 21px;
+      margin-bottom: 28px;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 52px;
+    margin-bottom: 20px;
+    @include desktop {
+      gap: 32px;
+    }
+    @include laptop {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 66px;
+      row-gap: 44px;
+    }
+    @include mintop {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 21px;
+    }
+    @include tablet {
+      gap: 27px;
+    }
+  }
+  &__item {
+    max-width: 216px;
+    position: relative;
+    margin-left: 40px;
+    border-bottom: 4px solid $darkpurple-color;
+    border-image: linear-gradient(
+      87.4deg,
+      #2e00b1 -11.74%,
+      #8100bd 48.81%,
+      #a400be 113.27%
+    );
+    border-image-slice: 1;
+    @include mintop {
+      max-width: 208px;
+    }
+    @include tablet {
+      margin-left: 41px;
+      border-bottom: 2px solid $darkpurple-color;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -34px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &__item-equalizer:before {
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/profit/equalizer.svg");
+    @include desktop {
+      top: 2px;
+    }
+    @include tablet {
+      top: -1px;
+    }
+  }
+  &__item-lock:before {
+    width: 24px;
+    height: 31.5px;
+    background-image: url("../img/profit/lock.svg");
+    @include desktop {
+      top: -3px;
+    }
+    @include tablet {
+      top: -6px;
+    }
+  }
+  &__item-authorenew:before {
+    width: 24px;
+    height: 33px;
+    background-image: url("../img/profit/autorenew.svg");
+    @include desktop {
+      top: -2px;
+    }
+    @include tablet {
+      top: -6px;
+    }
+  }
+  &__item-checked:before {
+    top: 3px;
+    left: -37px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/profit/checked.svg");
+    @include desktop {
+      top: 0;
+    }
+    @include tablet {
+      top: -3px;
+    }
+  }
+  &__subtitle {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 9px;
+    @include desktop {
+      font-size: 24px;
+      line-height: 28.8px;
+      margin-bottom: 13.5px;
+    }
+    @include tablet {
+      font-size: 17px;
+      line-height: 20.4px;
+      margin-bottom: 8px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 15px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 18.2px;
+      margin-bottom: 10px;
+    }
+  }
+}

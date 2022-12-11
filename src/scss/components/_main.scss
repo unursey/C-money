@@ -1,0 +1,29 @@
+.present {
+  &:after {
+    content: "";
+    width: 916px;
+    height: 605px;
+    position: absolute;
+    background-image: url("../img/present/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    @include desktop {
+      width: 758px;
+      height: 497px;
+      background-image: url("../img/present/bg1024.png");
+    }
+    @include laptop {
+      width: 535px;
+      height: 542px;
+      background-image: url("../img/present/bg768.png");
+    }
+    @include tablet {
+      width: 219px;
+      height: 383px;
+      background-image: url("../img/present/bg320.png");
+    }
+  }
+}

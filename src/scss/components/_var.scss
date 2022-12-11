@@ -1,0 +1,63 @@
+  $background-color: #EEE2FA;
+  
+  $white-color: #FFFFFF;
+  $black-color: #000000;
+  $grey-color: #B0B0B0;
+
+  $darkpurple-color: #210B36;
+  $greypurple-color: #5F536C;
+  $brightpurple-color: #B865D6;
+  $purple-color: #6E479E;
+  $shadowpurple-color: #C6B6D7;
+  $verylightpurple-color: #DFD4EB;
+  $lightpurple-color: #EEE2FA;
+
+
+@mixin maxtop {
+  @media (min-width: 2100px) {
+  @content
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1150px) {
+  @content
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 768px) {
+  @content
+  }
+}
+
+@mixin  mintop{
+  @media (max-width: 660px) {
+  @content
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 520px) {
+  @content
+  }
+}
+
+@mixin font($name, $weight) {
+  font: {
+    family: $name;
+    weight: $weight;
+    display: swap;
+  }
+  src: url("../fonts/#{ $name }-#{ $weight }.woff2") format("woff2"),
+    url("../fonts/#{ $name }-#{ $weight }.woff") format("woff"),
+}
+
+@mixin bg-full ($url) {
+  background: {
+    image: url($url);
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  };
+}

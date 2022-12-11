@@ -1,0 +1,73 @@
+.header {
+  position: relative;
+  height: 38px;
+  z-index: 10;
+  background-color: transparent;
+  margin-bottom: -38px;
+  padding-top: 20px;
+  z-index: 110;
+  &__container {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+  }
+  &__logo-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  &__logo {
+    width: 38px;
+    height: 38px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    @include laptop {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 40px;
+    color: $white-color;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20.46px;
+    @include maxtop {
+      color: $darkpurple-color;
+    }
+  }
+  &__button-nav {
+    display: none;
+    @include laptop {
+      display: flex;
+      align-self: center;
+      width: 24px;
+      height: 24px;
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 0;
+    }
+  }
+  &__button-icon,
+  &__button-close {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+  }
+  &__button-close {
+    &:hover {
+        border-radius: 50%;
+        background: $verylightpurple-color;
+      }
+  }
+  &__button-icon_hide,
+  &__button-close_hide {
+    display: none;
+  }
+}
