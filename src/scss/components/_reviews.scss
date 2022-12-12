@@ -64,13 +64,13 @@
       background-color: $verylightpurple-color;
     }
   }
-  &__button-next {
+  &__button-prev {
     left: 50px;
     @include desktop {
       left: 0px;
     }
   }
-  &__button-prev {
+  &__button-next {
     transform: rotate(180deg);
     right: 50px;
     @include desktop {
