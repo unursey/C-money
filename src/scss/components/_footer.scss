@@ -139,6 +139,9 @@
     display: flex;
     gap: 18px;
   }
+  &__social-link {
+    display: block;
+  }
   &__image {
     width: 46px;
     height: 46px;
